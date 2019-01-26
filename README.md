@@ -3,5 +3,5 @@
 
 ## 使用Docker安装
 ```
-docker push leonxi/duan-zuul
+docker pull leonxi/duan-zuul
 ```
