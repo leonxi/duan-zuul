@@ -34,4 +34,5 @@ COPY ./* $DUAN_SOURCE_PATH
 
 WORKDIR $DUAN_SOURCE_PATH
 
-RUN 
+RUN mvn clean package \
+  && cp $DUAN_SOURCE_PATH/target/ROOT.war $CATALINA_HOME/webapps/
