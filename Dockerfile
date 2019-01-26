@@ -26,7 +26,7 @@ ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 COPY settings-docker.xml /usr/share/maven/ref/
 
 # Install DUAN-Zuul
-ARG DUAN_SOURCE_PATH /opt/xiaoji/duan/duan-zuul
+ARG DUAN_SOURCE_PATH="/opt/xiaoji/duan/duan-zuul"
 
 RUN mkdir -p $DUAN_SOURCE_PATH
 
