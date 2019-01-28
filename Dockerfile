@@ -40,6 +40,6 @@ WORKDIR $DUAN_SOURCE_PATH
 RUN mvn clean package \
   && cp $DUAN_SOURCE_PATH/target/ROOT.war $CATALINA_HOME/webapps/
   
-RUN rm -Rf $DUAN_SOURCE_PATH \
-  && rm -Rf /tmp \
-  && rm -Rf $USER_HOME_DIR/.m2
+#RUN rm -Rf $DUAN_SOURCE_PATH \
+#  && rm -Rf /tmp \
+#  && rm -Rf $USER_HOME_DIR/.m2
