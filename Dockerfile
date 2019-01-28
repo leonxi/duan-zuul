@@ -31,6 +31,7 @@ ARG DUAN_SOURCE_PATH="/opt/xiaoji/duan/duan-zuul"
 RUN mkdir -p $DUAN_SOURCE_PATH
 
 COPY ./* $DUAN_SOURCE_PATH/
+COPY ./src $DUAN_SOURCE_PATH/src
 
 WORKDIR $DUAN_SOURCE_PATH
 
