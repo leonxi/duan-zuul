@@ -7,7 +7,7 @@ RUN rm -Rf $CATALINA_HOME/webapps/examples
 RUN rm -Rf $CATALINA_HOME/webapps/host-manager
 RUN rm -Rf $CATALINA_HOME/webapps/manager
 
-RUN apt-get install openjdk-8-jdk
+RUN apt-get update && apt-get install openjdk-8-jdk
 
 # Install Maven
 ARG MAVEN_VERSION=3.6.0
